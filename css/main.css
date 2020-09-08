@@ -1,0 +1,104 @@
+*{
+  font-size: 18px;
+  font-family: 'Press Start 2P', cursive; 
+}
+body {
+  background-image: url("../images/game-back.jpg");
+  background-repeat: repeat;
+}
+.container {
+  height: 900px;
+  padding: auto
+}
+.row, .col {
+  height: 100%;
+}
+.game-start, .game-over, .game-win, .rules, .game-status{
+  background-color: grey;
+  opacity: .96;
+  height: 880px;
+  margin-top: 1rem;
+  border: 4px solid black;
+  border-radius: 4px;
+}
+.wrapper {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+h2 {
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  text-align: center
+}
+.game-start-ul {
+  padding: 4rem 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center    
+}
+ul li{
+  padding: .6rem;
+  list-style-type: none;
+}
+button {
+  background-color: transparent;
+  border: none
+}
+.sword {
+  margin: 2rem auto;
+  text-align: center;
+  height: 128px;
+  width: 128px;
+  background-image: url("../images/excalibur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.helmet {
+  margin-top: .5rem;
+  margin-right: .5rem;
+  height: 28px;
+  width: 28px;
+  background-image: url("../images/helmet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.torch {
+  margin-top: 3rem;
+  height: 64px;
+  width: 64px;
+  background-image: url("../images/torch.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.li-head{
+  font-size: 1.4rem;
+}
+.d-none{
+  display: none;
+}
+.canvas canvas{
+  margin-top: 1.5rem;
+}
+.canvas .game-status{
+  float: right;
+  width: 340px;
+  flex-flow: column wrap;
+}
+.game-status div {
+  margin-left: 5px;
+}
+button {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: .5rem .2rem;
+  box-shadow: 2px 2px 2px 2px;
+}
+small {
+  margin-bottom: -1rem;
+}

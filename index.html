@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="./images/helmet.png"/>
+  <title>-J.A.D-</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="game-start ">
+          <div class="wrapper d-flex">
+              <div class="d-flex justify-content-center"> <div class="torch"></div> <h2>Just Another Dungeon</h2> <div class="torch"></div> </div>
+              <div class="sword"></div>
+              <ul class="game-start-ul">
+                <li class="d-flex"><div class="helmet"></div><button class="start-btn">Start Game</button></li>
+                <li class="d-flex"><div class="helmet"></div><button class="rules-btn">Rules</button></li>
+              </ul>
+          </div>
+        </div>
+        <div class="game-over d-none">
+          <div class="wrapper d-flex">
+            <div class="d-flex justify-content-center"> <div class="torch"></div> <h2>GAME OVER</h2> <div class="torch"></div> </div>
+            <div class="sword"></div>
+            <div class="d-flex justify-content-center align-items-center mt-5"><div class="helmet"></div><button class="restart-btn">Restart</button></div>
+          </div>
+        </div>
+        <div class="game-win d-none">
+          <div class="wrapper d-flex">
+            <div class="d-flex justify-content-center"> <div class="torch"></div> <h2>YOU WIN</h2> <div class="torch"></div> </div>
+            <div class="sword"></div>
+            <div class="d-flex justify-content-center align-items-center mt-5"><div class="helmet"></div><button class="restart-btn">Restart</button></div>
+          </div>
+        </div>
+        <div class="rules d-none">
+            <div class="wrapper d-flex">
+              <div class="d-flex justify-content-center"> <div class="torch"></div> <h2>RULES</h2> <div class="torch"></div> </div>
+              <div class="sword"></div>
+              <ul>
+                <li class="d-flex"><div class="helmet"></div><ul>
+                  <li class="li-head">Colors:</li>
+                  <li>Blue: Player</li>
+                  <li>Red: Zombies</li>
+                  <li>Yellow: Princess</li>
+                </ul></li>
+                <li class="d-flex"><div class="helmet"></div>Collect the yellow coins to score</li>
+                <li class="d-flex"><div class="helmet"></div>Collect the purple coins to make the zombies vulnerable</li>
+                <li class="d-flex"><div class="helmet"></div>Collect all purple coins to open the gate and save the princess</li>
+                <li class="d-flex"><div class="helmet"></div><button class="back-btn">Back to main menu</button></li>
+              </ul> 
+            </div>
+          </div>
+          <div class="game canvas d-none">
+            <canvas width="760" height="880" id="canvas"></canvas>
+            <div class="game-status d-flex justify-content-around">
+              <div>Score: <div class="score"></div></div>
+              <div>Info:<div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque veniam eaque maiores, quae, deleniti voluptate dolore aperiam laborum ipsa est impedit in doloribus nisi quod reprehenderit earum reiciendis blanditiis.</div></div>
+              <div class="d-flex justify-content-center align-items-center"><div class="helmet"></div><small>Pedro Arantes</small></div>
+              <div><button class="back-btn">Back to main menu</button></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="js/constants.js"></script>
+  <script src="js/Walls.js"></script>
+  <script src="js/Cagegate.js"></script>
+  <script src="js/Coin.js"></script>
+  <script src="js/Powercoin.js"></script>
+  <script src="js/Character.js"></script>
+  <script src="js/Princess.js"></script>
+  <script src="js/Zombie.js"></script>
+  <script src="js/Game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
